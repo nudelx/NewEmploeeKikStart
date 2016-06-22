@@ -1,0 +1,6 @@
+a.navbar-brand img, a.navbar-brand div{
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid red;
+
+}
