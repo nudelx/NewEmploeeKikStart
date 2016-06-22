@@ -1,6 +1,35 @@
 a.navbar-brand img, a.navbar-brand div{
   display: inline-block;
   margin-right: 10px;
-  border: 1px solid red;
+  vertical-align: top;
+}
 
+.page-info {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  left: 0px;
+}
+
+.inner-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.footer-info {
+  margin-left: 10px;
+  margin-right: 10px;
+  min-width: 100px;
+  text-align: center;
+  line-height: 32px;
+}
+.page{
+  border: 1px solid red;
+  margin-top: 70px;
+  width: 100%;
+  max-height: 800px;
+  overflow: auto;
+  background: #fff;
 }
