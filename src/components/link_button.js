@@ -1,13 +1,15 @@
 import React, { PropTypes } from 'react';
 
-const onClickAction = (e) => {
-  const pageNum = (e.target.nodeName.toUpperCase() === 'SPAN')
-                  ? (e.target.parentNode.getAttribute('data-page'))
-                  : (e.target.getAttribute('data-page'));
-  console.log('CLICK => ', pageNum);
-};
 
 const LinkButton = (props) => {
+  const getNextPage = (e) => {
+    const pageNum = (e.target.nodeName.toUpperCase() === 'SPAN')
+      ? (e.target.parentNode.getAttribute('data-page'))
+      : (e.target.getAttribute('data-page'));
+    props.loadPageByNum(pageNum);
+  };
+
+  console.dir(props);
   const className = `glyphicon glyphicon-arrow-${props.icon}`;
   return (
     <div>
@@ -15,7 +17,7 @@ const LinkButton = (props) => {
         type='button'
         className='btn btn-primary'
         data-page={props.page}
-        onClick={onClickAction}
+        onClick={getNextPage}
       >
         <span className={className} aria-hidden='true'></span>
       </button>
@@ -25,7 +27,7 @@ const LinkButton = (props) => {
 
 LinkButton.propTypes = {
   icon: PropTypes.string.isRequired,
-  // link: PropTypes.string.isRequired
-  page: PropTypes.number
+  page: PropTypes.number,
+  loadPageByNum: PropTypes.func
 };
 export default LinkButton;

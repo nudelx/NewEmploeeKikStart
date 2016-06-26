@@ -5,8 +5,8 @@ import pageActions from '../actions/page';
 const mapDispatchToProps = (dispatch) => {
   const loadPageAction = pageActions(dispatch);
 
-  const loadPageByNum = (num) => {
-    loadPageAction.loadPage(num);
+  const loadPageByNum = (pageNum) => {
+    loadPageAction.loadPage(pageNum);
   };
   return {
     loadPageByNum
