@@ -1,6 +1,5 @@
 import React, { PropTypes } from 'react';
 
-
 const LinkButton = ({ icon, loadPageByNum, page }) => {
   const getNextPage = (e) => {
     const pageNum = (e.target.nodeName.toUpperCase() === 'SPAN')

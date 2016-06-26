@@ -8,7 +8,7 @@ const App = ({ params }) => (
   <div>
     <Title title={SETTINGS.title} />
     <Page content={`React simple starter # page ${params.page}`} />
-    <Footer info='page x of y' page={params.page} />
+    <Footer info={`Page ${params.page} of 100`} page={params.page} />
   </div>
 );
 
