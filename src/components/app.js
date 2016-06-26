@@ -4,12 +4,11 @@ import Footer from './footer';
 import Page from './page';
 import SETTINGS from '../constants/app-settings';
 
-
 const App = ({ params }) => (
   <div>
     <Title title={SETTINGS.title} />
     <Page content={`React simple starter # page ${params.page}`} />
-    <Footer info='page x of y' />
+    <Footer info='page x of y' page={params.page} />
   </div>);
 
 App.propTypes = {

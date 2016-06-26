@@ -33,3 +33,8 @@ a.navbar-brand img, a.navbar-brand div{
   overflow: auto;
   background: #fff;
 }
+
+.fix-width-button{
+  border: 1px solid red;
+  width: 150px;
+}

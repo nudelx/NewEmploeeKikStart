@@ -13,21 +13,22 @@ const LinkButton = (props) => {
   const className = `glyphicon glyphicon-arrow-${props.icon}`;
   return (
     <div>
-      <button
-        type='button'
-        className='btn btn-primary'
+      <a
+        href={`/${(parseInt(props.page, 0) + 1)}`}
         data-page={props.page}
+        className='btn btn-primary fix-width-button'
         onClick={getNextPage}
+        role='button'
       >
         <span className={className} aria-hidden='true'></span>
-      </button>
+      </a>
     </div>
   );
 };
 
 LinkButton.propTypes = {
   icon: PropTypes.string.isRequired,
-  page: PropTypes.number,
+  page: PropTypes.string,
   loadPageByNum: PropTypes.func
 };
 export default LinkButton;
