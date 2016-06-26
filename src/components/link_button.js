@@ -1,9 +1,10 @@
 import React, { PropTypes } from 'react';
 
-const LinkButton = ({ icon, link }) => (
+const LinkButton = ({ icon }) => (
   <div>
-    <div>{icon}</div>
-    <div>{link}</div>
+    <button type='button' className='btn btn-primary'>
+      <span className={`glyphicon glyphicon-arrow-${icon}`} aria-hidden='true'></span>
+    </button>
   </div>
 );
 

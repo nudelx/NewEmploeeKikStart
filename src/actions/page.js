@@ -1,5 +1,5 @@
 import { createAction } from 'redux-actions';
-import ACTIONS from 'constants/actions';
+import ACTIONS from '../constants/actions';
 const pageReceived = createAction(ACTIONS.PAGE_RECEIVED);
 
 const pageActions = (dispatch) => (
