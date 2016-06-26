@@ -1,6 +1,5 @@
 import React, { PropTypes } from 'react';
 import LinkButtonConraiter from '../containers/button-container';
-console.dir(LinkButtonConraiter);
 
 const Footer = ({ info, page }) => (
   <div className='page-info'>

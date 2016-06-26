@@ -9,7 +9,8 @@ const App = ({ params }) => (
     <Title title={SETTINGS.title} />
     <Page content={`React simple starter # page ${params.page}`} />
     <Footer info='page x of y' page={params.page} />
-  </div>);
+  </div>
+);
 
 App.propTypes = {
   params: PropTypes.object,
