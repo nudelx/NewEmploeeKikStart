@@ -1,13 +1,14 @@
 import React, { PropTypes } from 'react';
 import LinkButtonConraiter from '../containers/button-container';
+console.dir(LinkButtonConraiter);
 
 const Footer = ({ info }) => (
   <div className='page-info'>
     <div className='navbar navbar-default navbar-fixed-bottom'>
       <div className='inner-content'>
-        <LinkButtonConraiter icon='left' />
+        <LinkButtonConraiter icon='left' page={2} />
         <div className='footer-info'>{info}</div>
-        <LinkButtonConraiter icon='right' />
+        <LinkButtonConraiter icon='right' page={22} />
       </div>
     </div>
   </div>
@@ -16,6 +17,5 @@ const Footer = ({ info }) => (
 Footer.propTypes = {
   info: PropTypes.string
 };
-
 
 export default Footer;

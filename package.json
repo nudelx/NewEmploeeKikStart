@@ -29,6 +29,7 @@
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
+    "babel-plugin-transform-es2015-shorthand-properties": "^6.8.0",
     "babel-preset-stage-1": "^6.1.18",
     "eslint": "^2.13.1",
     "eslint-plugin-import": "^1.8.1",
