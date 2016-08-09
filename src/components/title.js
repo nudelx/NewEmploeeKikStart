@@ -8,7 +8,7 @@ const Title = ({ title }) => (
         <div className='navbar-header'>
           <a className='navbar-brand' href='/'>
             <img width='200px' alt='samanage' height='30px' src={brand} />
-            <div>{`${title}- test`}</div>
+            <div>{title}</div>
           </a>
         </div>
       </div>
